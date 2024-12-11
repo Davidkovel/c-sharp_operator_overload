@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace InheritanceApp;
 
 public class CreditCard
@@ -62,8 +62,8 @@ class Program
     {
         try
         {
-            CreditCard card1 = new CreditCard("1234 5678 9012 3456", 123, 3000);
-            CreditCard card2 = new CreditCard("9876 5432 1098 7654", 123, 4000);
+            var card1 = new CreditCard("1234 5678 9012 3456", 123, 3000);
+            var card2 = new CreditCard("9876 5432 1098 7654", 123, 4000);
 
             CreditCard increasedCard = card1 + 400;
             Console.WriteLine($"Balance after deposit: {increasedCard.Balance}");
