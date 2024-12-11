@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace InheritanceApp;
 
 public class City
@@ -68,8 +68,8 @@ class Program
 {
     static void Main()
     {
-        City city1 = new City("Kyiv", "Ukraine", 2800000);
-        City city2 = new City("Lviv", "Ukraine", 720000);
+        var city1 = new City("Kyiv", "Ukraine", 2800000);
+        var city2 = new City("Lviv", "Ukraine", 720000);
 
         City increasedCity = city1 + 70000;
         Console.WriteLine($"{increasedCity.Name} population: {increasedCity.Population}");
